@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FreeWaytax</title>
+    <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="./css/admin-style.css" type="text/css">
+</head>
+
+<body class="themeMain" id="main">
+    <!-- Sign up Screen Start -->
+    <section class="signUp">
+        <div class="card">
+            <a class="logo" href="#">
+                <img src="./img/logo.png" alt="logo">
+            </a>
+            <h1 class="heading">Create an Account for <span>Free</span></h1>
+            <form> 
+                <ul class="formProgressbar">
+                    <li class="formList active w-50"><div  class="progress-item" data-value="1 of 2" style="background: conic-gradient(var(--themeColor) calc(50%), #CFD2D7 0deg);"></div> <div class="mainProgressbar"><div class="SmallHeading">Personal Information</div><div class="smallText">Next: Personal Information</div></div></li>
+                    <li class="w-50"><div  class="progress-item" data-value="2 of 2" style="background: conic-gradient(var(--themeColor) calc(100%), #CFD2D7 0deg);"></div> <div class="mainProgressbar"><div class="SmallHeading">Add new Business</div><div class="smallText">Previous: Personal Information</div></div></li>
+                </ul> 
+                <div class="main_Section">
+                    <!-- Personal Information -->
+                    <fieldset class="first main_from open_form">
+                        <div class="row">
+                            <div class="col-md-6 form-group error-message">
+                                <label for="FirstName" class="form-label">First Name<span class="fill">*</span></label>
+                                <input type="text" class="form-control" id="FirstName" placeholder="Enter first name"
+                                    aria-describedby="FirstNameHelp">
+                               <div class="error-text">Name is Required</div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="LastName" class="form-label">Last Name<span class="fill">*</span></label>
+                                <input type="text" class="form-control" id="LastName" placeholder="Enter last name"
+                                    aria-describedby="LastNameHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="EmailAddress" class="form-label">Email Address<span
+                                        class="fill">*</span></label>
+                                <input type="email" class="form-control" id="EmailAddress"
+                                    placeholder="Enter email address" aria-describedby="EmailAddressHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="PhoneNumber" class="form-label">Phone Number<span
+                                        class="fill">*</span></label>
+                                <input type="number" class="form-control" id="PhoneNumber"
+                                    placeholder="Enter phone number" aria-describedby="PhoneNumberHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="CreatePassword" class="form-label">Create Password<span
+                                        class="fill">*</span></label>
+                                <input type="password" class="form-control" id="CreatePassword"
+                                    placeholder="Enter password" aria-describedby="CreatePasswordHelp">
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <button type="button" class="btn btn-primary w-100 next">Save and Continue</button>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <span class="smallText">Already have an account? <a href="#"
+                                        class="link text-theme">Login here</a></span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <!-- Add new Business -->
+                    <fieldset class="main_from last">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="smallHeading">Business Info</h6>
+                            </div>
+                            <div class="col-md-12 form-group error-message">
+                                <label for="BusinessType" class="form-label">Select Business Type<span
+                                        class="fill">*</span></label>
+                                <select class="form-select" aria-label="Default select Business Type">
+                                    <option selected>Sole proprietor or Single-member LLC</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="error-text">Name is Required</div>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="businessname" class="form-label">Enter Business Name<span
+                                        class="fill">*</span></label>
+                                <input type="text" class="form-control" id="businessname"
+                                    placeholder="Enter business name" aria-describedby="businessnameHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="EIN" class="form-label">Enter EIN<span class="fill">*</span></label>
+                                <input type="text" class="form-control" id="EIN" placeholder="Enter EIN"
+                                    aria-describedby="EINHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="ConfirmEIN" class="form-label">Confirm EIN<span
+                                        class="fill">*</span></label>
+                                <input type="text" class="form-control" id="ConfirmEIN" placeholder="Enter confirm EIN"
+                                    aria-describedby="ConfirmEINHelp">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="AddressLine1" class="form-label">Address Line 1<span
+                                        class="fill">*</span></label>
+                                <input type="text" class="form-control" id="AddressLine1" placeholder="Enter address"
+                                    aria-describedby="AddressLine1Help">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="AddressLine2" class="form-label">Address Line 2<span
+                                        class="fill">*</span></label>
+                                <input type="text" class="form-control" id="AddressLine2" placeholder="Enter address"
+                                    aria-describedby="AddressLine2Help">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="Country" class="form-label">Select Country<span
+                                        class="fill">*</span></label>
+                                <select class="form-select" aria-label="Default select Country">
+                                    <option selected>US</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="ZipCode" class="form-label">Zip Code<span class="fill">*</span></label>
+                                <input type="number" class="form-control" id="ZipCode" placeholder="Enter zip code"
+                                    aria-describedby="ZipCodeHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <span class="smallText mb-2">Check if this address is different than last year's
+                                    filing.</span>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="AddressChange1">
+                                    <label class="form-check-label" for="AddressChange1">
+                                        Address Change
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h6 class="smallHeading">Signing Authority</h6>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="FirstName" class="form-label">First Name<span class="fill">*</span></label>
+                                <input type="text" class="form-control" id="FirstName" placeholder="Enter first name"
+                                    aria-describedby="FirstNameHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="Title" class="form-label">Title<span class="fill">*</span></label>
+                                <input type="text" class="form-control" id="Title" placeholder="Enter title"
+                                    aria-describedby="TitleHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="PIN" class="form-label">PIN <small class="small">(Any 5 digits, except
+                                        00000)</small><span class="fill">*</span></label>
+                                <input type="text" class="form-control" id="PIN" placeholder="Enter PIN"
+                                    aria-describedby="PINHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="PhoneNumber" class="form-label">Phone Number<span
+                                        class="fill">*</span></label>
+                                <input type="number" class="form-control" id="PhoneNumber"
+                                    placeholder="Enter phone number" aria-describedby="PhoneNumberHelp">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <label for="EmailAddress" class="form-label">Email Address<span
+                                        class="fill">*</span></label>
+                                <input type="email" class="form-control" id="EmailAddress"
+                                    placeholder="Enter email address" aria-describedby="EmailAddressHelp">
+                            </div>
+                            <div class="col-12">
+                                <h6 class="smallHeading mt-2 mb-2">Third Party Designee</h6>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="AddressChange2">
+                                    <label class="form-check-label" for="AddressChange2">
+                                        Address Change
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3">
+                                <button type="button"  onclick="location.href='dashboard.html'" class="btn btn-primary w-100">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </section>
+   <!-- Sign up Screen End -->
+    <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/custom.js"></script> 
+</body>
+
+</html>
