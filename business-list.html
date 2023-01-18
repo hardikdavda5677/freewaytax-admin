@@ -85,8 +85,15 @@
                     </div>
                     <span class="link-label">2290 Claims</span>
                 </a>
-            </li>
+            </li> 
         </ul>
+        <div class="packageDetails bg-pending">
+            <div class="status"></div>
+            <div class="packageInfo">
+                <h5 class="title">Unlimited Package </h5>
+                <span class="smallText">Valid Until : 12/22/2023</span>
+            </div>
+        </div>
     </aside>
     <!-- Aside Menu Section End -->
 
@@ -161,334 +168,315 @@
                                 <li class="breadcrumb-item"><a href="#">Business List</a></li>
                             </ol>
                         </nav>
-                        <div class="mainAllHeader"> 
-                                <h6 class="tableHeading">Business List</h6>  
-                                <a href="./add-business.html" class="btn btn-primary addBtn"><img src="./img/add-icon.svg" alt="icon" />Add New Business</a> 
+                        <div class="mainAllHeader">
+                            <h6 class="tableHeading">Business List</h6>
+                            <a href="./add-business.html" class="btn btn-primary addBtn"><img src="./img/add-icon.svg"
+                                    alt="icon" />Add New Business</a>
                         </div>
-                       <ul class="nav nav-tabs customTab" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="active-tab" data-bs-toggle="tab" data-bs-target="#active-tab-pane" type="button" role="tab"  aria-controls="active-tab-pane" aria-selected="true">Active</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="inactive-tab" data-bs-toggle="tab" data-bs-target="#inactive-tab-pane" type="button" role="tab" aria-controls="inactive-tab-pane" aria-selected="false">Inactive</button>
-                        </li>
-                    </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="active-tab-pane" role="tabpanel"
-                            aria-labelledby="active-tab" tabindex="0">
-                            <div class="packageDetails bg-pending">
-                                <div class="status"></div>
-                                <div class="ms-3">
-                                    <h5 class="title">Unlimited Package </h5>
-                                    <span class="smallText">Valid Until : 12/22/2023</span>
-                                </div>
-                            </div>
-                            <table id="business-list" class="display nowrap themeTable" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>Business Name</th>
-                                        <th>EIN</th>
-                                        <th>City</th>
-                                        <th>State</th>
-                                        <th>Zip Code</th> 
-                                        <th class="w-10 text-center">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody> 
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">FreeWayTax</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                    
+                        <table id="business-list" class="display nowrap themeTable" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Business Name</th>
+                                    <th>EIN</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Zip Code</th>
+                                    <th class="w-10 text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">FreeWayTax</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Miami</td>
-                                        <td>FL</td>
-                                        <td>32013</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr>  
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">AnotherBusiness</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Miami</td>
+                                    <td>FL</td>
+                                    <td>32013</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">AnotherBusiness</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Los Angeles</td>
-                                        <td>California</td>
-                                        <td>90001</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr> 
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">FreeWayTax</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Los Angeles</td>
+                                    <td>California</td>
+                                    <td>90001</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">FreeWayTax</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Miami</td>
-                                        <td>FL</td>
-                                        <td>32013</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr>  
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">AnotherBusiness</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Miami</td>
+                                    <td>FL</td>
+                                    <td>32013</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">AnotherBusiness</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Los Angeles</td>
-                                        <td>California</td>
-                                        <td>90001</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr> 
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">FreeWayTax</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Los Angeles</td>
+                                    <td>California</td>
+                                    <td>90001</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">FreeWayTax</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Miami</td>
-                                        <td>FL</td>
-                                        <td>32013</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr>  
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">AnotherBusiness</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Miami</td>
+                                    <td>FL</td>
+                                    <td>32013</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">AnotherBusiness</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Los Angeles</td>
-                                        <td>California</td>
-                                        <td>90001</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr> 
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">FreeWayTax</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Los Angeles</td>
+                                    <td>California</td>
+                                    <td>90001</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">FreeWayTax</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Miami</td>
-                                        <td>FL</td>
-                                        <td>32013</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr>  
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">AnotherBusiness</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Miami</td>
+                                    <td>FL</td>
+                                    <td>32013</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">AnotherBusiness</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Los Angeles</td>
-                                        <td>California</td>
-                                        <td>90001</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr> 
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">FreeWayTax</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Los Angeles</td>
+                                    <td>California</td>
+                                    <td>90001</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">FreeWayTax</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Miami</td>
-                                        <td>FL</td>
-                                        <td>32013</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr>  
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">AnotherBusiness</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Miami</td>
+                                    <td>FL</td>
+                                    <td>32013</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">AnotherBusiness</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Los Angeles</td>
-                                        <td>California</td>
-                                        <td>90001</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr> 
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">FreeWayTax</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Los Angeles</td>
+                                    <td>California</td>
+                                    <td>90001</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">FreeWayTax</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Miami</td>
-                                        <td>FL</td>
-                                        <td>32013</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr>  
-                                    <tr>
-                                        <td>
-                                            <div class="mobileView">
-                                                <div>
-                                                    <div class="smallHeading">AnotherBusiness</div>
-                                                    <div class="date">EIN: 123456789</div>
-                                                </div> 
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Miami</td>
+                                    <td>FL</td>
+                                    <td>32013</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mobileView">
+                                            <div>
+                                                <div class="smallHeading">AnotherBusiness</div>
+                                                <div class="date">EIN: 123456789</div>
                                             </div>
-                                        </td>
-                                        <td>123456789</td>
-                                        <td>Los Angeles</td>
-                                        <td>California</td>
-                                        <td>90001</td> 
-                                        <td class="w-10 text-center">
-                                            <span class="tableGridBtn">
-                                                <a href="#" class="btn btn-secondary smallBtn me-2">
-                                                    <img src="./img/edit.svg" alt="icon">
-                                                </a>
-                                                <a href="#" class="btn btn-danger smallBtn">
-                                                    <img src="./img/delete.svg" alt="icon">
-                                                </a>
-                                            </span>
-                                        </td>
-                                    </tr> 
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="tab-pane fade" id="inactive-tab-pane" role="tabpanel" aria-labelledby="inactive-tab"
-                            tabindex="0">inactive</div>
-                    </div>  
+                                        </div>
+                                    </td>
+                                    <td>123456789</td>
+                                    <td>Los Angeles</td>
+                                    <td>California</td>
+                                    <td>90001</td>
+                                    <td class="w-10 text-center">
+                                        <span class="tableGridBtn">
+                                            <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                <img src="./img/edit.svg" alt="icon">
+                                            </a>
+                                            <a href="#" class="btn btn-danger smallBtn">
+                                                <img src="./img/delete.svg" alt="icon">
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                     </div>
                 </div>
             </div>
@@ -501,9 +489,7 @@
     <!-- datatable js -->
     <script type="text/javascript" src="./js/datatable/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="./js/datatable/dataTables.responsive.min.js"></script>
-    <script type="text/javascript" src="./js/datatable/responsive.bootstrap5.min.js"></script>
-    <!-- owl js -->
-    <script type="text/javascript" src="./js/owl/owl.carousel.js"></script>
+    <script type="text/javascript" src="./js/datatable/responsive.bootstrap5.min.js"></script> 
     <!-- Custom js -->
     <script type="text/javascript" src="./js/custom.js"></script>
     <script>
@@ -517,8 +503,8 @@
                 "paging": true,
                 "pageLength": 10,
                 "dom": '<"table-header"<"order2"l><"order1"f>>rtip',
-                    language: {
-                    search: "_INPUT_", 
+                language: {
+                    search: "_INPUT_",
                     searchPlaceholder: "Search Business Name / EIN"
                 },
                 columnDefs: [

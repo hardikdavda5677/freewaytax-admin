@@ -87,6 +87,13 @@
                 </a>
             </li>
         </ul>
+        <div class="packageDetails bg-pending">
+            <div class="status"></div>
+            <div class="packageInfo">
+                <h5 class="title">Unlimited Package </h5>
+                <span class="smallText">Valid Until : 12/22/2023</span>
+            </div>
+        </div>
     </aside>
     <!-- Aside Menu Section End -->
 
@@ -716,6 +723,10 @@
                 "paging": true,
                 "pageLength": 5,
                 "dom": '<"table-header"<"header">l>rtip',
+                lengthMenu: [
+                    [5,10, 25, 50, -1],
+                    [5,10, 25, 50, 'All'],
+                ],
                 columnDefs: [
 
                     { targets: [0, 1, 2, 3, 4, 5, 6, 7], className: "desktop" },
