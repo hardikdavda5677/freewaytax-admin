@@ -1477,7 +1477,12 @@ form h6.smallHeading {
 .themeMain .dropdown-menu ul li {
     padding: 0px;
 }
-
+.themeMain .dropdown-menu ul li:hover,
+.themeMain .dropdown-menu ul li:focus,
+.themeMain .dropdown-item.active, 
+.themeMain .dropdown-item:active{
+    background-color: #e9ecef;
+}
 .themeMain .dropdown-menu ul li a {
     display: block;
     padding: 7px 15px;
@@ -1761,7 +1766,10 @@ form h6.smallHeading {
 .businessList .card-body {
     padding: 30px 20px;
 }
-
+.businessGrid .add-Btn{
+    margin-top: 100px;
+    text-align: center;
+}
 .businessList .mainHeading {
     display: flex;
     justify-content: space-between;
