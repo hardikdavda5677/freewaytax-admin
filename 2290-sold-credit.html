@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FreeWaytax</title>
+    <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="./css/admin-style.css" type="text/css">
+</head>
+
+<body class="themeMain" id="main">
+    <!-- Aside Menu Section Start -->
+    <aside class="menu-main" id="menuList">
+        <a href="#" class="asideLogo">
+            <img src="./img/logo-white.png" alt="logo">
+        </a>
+        <ul class="menu-list">
+            <li class="nav-item">
+                <a class="link-text" href="./dashboard.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/dashboard.svg" alt="icon">
+                        <img class="iconactive" src="./img/dashboard-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">Overview</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link-text" href="./business-list.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/business.svg" alt="icon">
+                        <img class="iconactive" src="./img/business-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">Business List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link-text" href="./previous-filing.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/filing.svg" alt="icon">
+                        <img class="iconactive" src="./img/filing-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">Previous Filing List</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link-text" href="./form-2290.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/form.svg" alt="icon">
+                        <img class="iconactive" src="./img/form-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">Form 2290</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link-text " href="./vin-corrections.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/vin.svg" alt="icon">
+                        <img class="iconactive" src="./img/vin-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">VIN Corrections</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link-text " href="./amendment-return.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/amendment.svg" alt="icon">
+                        <img class="iconactive" src="./img/amendment-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">Amendment Return</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link-text active" href="./2290-claims.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/2290claims.svg" alt="icon">
+                        <img class="iconactive" src="./img/2290claims-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">2290 Claims</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link-text " href="./accounting-firm.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/accounting-firm.svg" alt="icon">
+                        <img class="iconactive" src="./img/accounting-firm-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">Accounting Firm</span>
+                </a>
+            </li>
+        </ul>
+        <div class="packageDetails bg-pending">
+            <div class="status"></div>
+            <div class="packageInfo">
+                <h5 class="title">Unlimited Package </h5>
+                <span class="smallText">Valid Until : 12/22/2023</span>
+            </div>
+        </div>
+    </aside>
+    <!-- Aside Menu Section End -->
+    <section class="main-section">
+        <!-- Header Section Start -->
+        <header class="theme-header">
+            <div class="leftSide">
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span class=""></span>
+                    <span></span>
+                </button>
+                <form class="serachMain">
+                    <div class="form-group mb-0">
+                        <input type="text" class="form-control" placeholder="Type to Search" id="search">
+                        <div class="icon">
+                            <img src="./img/search.svg" alt="icon">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul class="rightSide">
+                <li class="list">
+                    <a href="#" class="notifications">
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5 23.7499V21.2499H7.5V12.4999C7.5 10.7707 8.02083 9.23405 9.0625 7.88988C10.1042 6.54654 11.4583 5.66654 13.125 5.24988V4.37488C13.125 3.85404 13.3075 3.41154 13.6725 3.04738C14.0367 2.68238 14.4792 2.49988 15 2.49988C15.5208 2.49988 15.9633 2.68238 16.3275 3.04738C16.6925 3.41154 16.875 3.85404 16.875 4.37488V5.24988C18.5417 5.66654 19.8958 6.54654 20.9375 7.88988C21.9792 9.23405 22.5 10.7707 22.5 12.4999V21.2499H25V23.7499H5ZM15 27.4999C14.3125 27.4999 13.7242 27.2553 13.235 26.7661C12.745 26.2761 12.5 25.6874 12.5 24.9999H17.5C17.5 25.6874 17.2554 26.2761 16.7662 26.7661C16.2762 27.2553 15.6875 27.4999 15 27.4999ZM10 21.2499H20V12.4999C20 11.1249 19.5104 9.9478 18.5312 8.96863C17.5521 7.98946 16.375 7.49988 15 7.49988C13.625 7.49988 12.4479 7.98946 11.4687 8.96863C10.4896 9.9478 10 11.1249 10 12.4999V21.2499Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="list dropdown">
+                    <a href="#" class="userProfile" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="userImg">
+                            <img src="./img/user.svg" alt="img">
+                        </div>
+                        <div class="user">
+                            <h6 class="userName">Olivia Rhye</h6>
+                            <span class="userEmail">olivia@untitledui.com</span>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" aria-labelledby="userDropdown">
+                        <div class="user-details">
+                            <h6 class="userName">Olivia Rhye</h6>
+                            <span class="userEmail">olivia@untitledui.com</span>
+                        </div>
+                        <ul>
+                            <li class="dropdown-item">
+                                <a href="#">My Profile</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Change Password</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="./index.html">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </header>
+        <!-- Header Section End -->
+        <!-- Content Section Start -->
+        <div class="inner-body stepperAllForm">
+            <div class="card">
+                <div class="all-body">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb custom-breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            <li class="breadcrumb-item active" aria-current="page">2290 Claims </li>
+                            <li class="breadcrumb-item"><a href="#">Over Paid Vehicle Credit</a></li>
+                        </ol>
+                    </nav>
+                    <div class="mainAllHeader mb-4">
+                        <h6 class="tableHeading mb-0">Over Paid Vehicle Credit</h6>
+                    </div>
+                    <form>
+                        <ul class="formProgressbar allformProgressbar">
+                            <li class="formList active">
+                                <div class="progress-item" data-value="1 of 4"
+                                    style="background: conic-gradient(var(--themeColor) calc(25%), #CFD2D7 0deg);">
+                                </div>
+                                <div class="mainProgressbar">
+                                    <div class="SmallHeading">Business</div>
+                                    <div class="smallText">Next: Credit Vehicle</div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="progress-item" data-value="2 of 4"
+                                    style="background: conic-gradient(var(--themeColor) calc(50%), #CFD2D7 0deg);">
+                                </div>
+                                <div class="mainProgressbar">
+                                    <div class="SmallHeading">Credit Vehicle</div>
+                                    <div class="smallText">Next: Price & Checkout</div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="progress-item" data-value="3 of 4"
+                                    style="background: conic-gradient(var(--themeColor) calc(75%), #CFD2D7 0deg);">
+                                </div>
+                                <div class="mainProgressbar">
+                                    <div class="SmallHeading">Price & Checkout</div>
+                                    <div class="smallText">Next: Form Summary</div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="progress-item" data-value="4 of 4"
+                                    style="background: conic-gradient(var(--themeColor) calc(100%), #CFD2D7 0deg);">
+                                </div>
+                                <div class="mainProgressbar">
+                                    <div class="SmallHeading">Form Summary</div>
+                                    <div class="smallText">Previous: Price & Checkout</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="main_Section">
+                            <!-- Business -->
+                            <fieldset class="first main_from open_form">
+                                <div class="container-sm">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h6 class="smallHeading">Business</h6>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="Filing Period" class="form-label">Select Filing Period</label>
+                                            <select class="form-select" aria-label="Filing Period">
+                                                <option selected>July 2022 - June 2023</option>
+                                                <option value="1">July 2021 - June 2022</option>
+                                                <option value="2">July 2020 - June 2021</option>
+                                                <option value="3">July 2019 - June 2020</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="BusinessType" class="form-label">Business</label>
+                                            <select class="form-select" aria-label="Default BusinessType">
+                                                <option selected>Sample</option>
+                                                <option value="1">Sample 1</option>
+                                                <option value="2">Sample 2</option>
+                                                <option value="3">Sample 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customBtn">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-primary prev">Previous</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-primary next">Next</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <!-- Credit Vehicle -->
+                            <fieldset class="main_from">
+                                <div class="container-sm">
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <h6 class="smallHeading">Credit Vehicle</h6>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="Select VIN #" class="form-label">Select VIN # <a href="#"
+                                                    class="link link-primary">New VIN #</a></label>
+                                            <select class="form-select" aria-label="Default Select VIN #">
+                                                <option selected>23243234324</option>
+                                                <option value="1">Increase Taxable Gross Weight</option>
+                                                <option value="2">Increase Taxable Gross Weight</option>
+                                                <option value="3">Increase Taxable Gross Weight</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="Sold, Destroyed or Stolen Date" class="form-label">Sold,
+                                                Destroyed or Stolen Date</label>
+                                            <select class="form-select"
+                                                aria-label="Default Sold, Destroyed or Stolen Date">
+                                                <option selected>July 21</option>
+                                                <option value="1">A 0lbs - 55,000lbs</option>
+                                                <option value="2">A 0lbs - 55,000lbs</option>
+                                                <option value="3">A 0lbs - 55,000lbs</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 form-group font-600">
+                                            <div class=" form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="LoggingVehicles">
+                                                <label class="form-check-label" for="LoggingVehicles">
+                                                    Logging Vehicles
+                                                </label>
+                                            </div>
+                                            <p>Check here Only if your Vehicle is Used for forest/Logging purpose only
+                                            </p>
+                                            <div class=" form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="LoggingVehicles1">
+                                                <label class="form-check-label" for="LoggingVehicles1">
+                                                    The vehicle Sold/Destroy or used less than 5,000 (7,500 miles
+                                                    agriculture vehicles) within the last period
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="Sold, Destroy or Stolen Date" class="form-label">Sold, Destroy
+                                                or Stolen Date <span class="fill">*</span></label>
+                                            <input type="text" class="form-control" id="Sold, Destroy or Stolen Date"
+                                                placeholder="" aria-describedby="Sold, Destroy or Stolen Date">
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="Type of Loss" class="form-label">Type of Loss</label>
+                                            <select class="form-select" aria-label="Type of Loss">
+                                                <option selected>Select Type of Loss</option>
+                                                <option value="1">C 56,001lbs - 57,000lbs</option>
+                                                <option value="2">C 56,001lbs - 57,000lbs</option>
+                                                <option value="3">C 56,001lbs - 57,000lbs</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 form-group">
+                                            <label for="Explanation for Claim" class="form-label">Explanation for
+                                                Claim</label>
+                                            <textarea class="form-control" id="Explanation for Claim" placeholder=""
+                                                rows="5"></textarea>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="Name" class="form-label">Name</label>
+                                                <input type="text" class="form-control" id="Name"
+                                                    placeholder="Enter name" aria-describedby="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="AddressLine1" class="form-label">Address Line 1<span
+                                                        class="fill">*</span></label>
+                                                <input type="text" class="form-control" id="AddressLine1"
+                                                    placeholder="Enter address" aria-describedby="AddressLine1Help">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="AddressLine2" class="form-label">Address Line 2<span
+                                                        class="fill">*</span></label>
+                                                <input type="text" class="form-control" id="AddressLine2"
+                                                    placeholder="Enter address" aria-describedby="AddressLine2Help">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Country" class="form-label">Country<span
+                                                        class="fill">*</span></label>
+                                                <select class="form-select" aria-label="Default select Country">
+                                                    <option selected>US</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="City" class="form-label">City</label>
+                                                <input type="text" class="form-control" id="City"
+                                                    placeholder="Enter city" aria-describedby="City">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="State" class="form-label">State</label>
+                                                <select class="form-select" aria-label="Default select State">
+                                                    <option selected>Alabama</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="ZipCode" class="form-label">Zip Code</label>
+                                                <input type="number" class="form-control" id="ZipCode"
+                                                    placeholder="Enter zip code" aria-describedby="ZipCodeHelp">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 form-group mb-5">
+                                            <a href="#" class="btn btn-purple addBtn small-Btn"><img
+                                                    src="./img/add-icon.svg" alt="icon" />Add</a>
+                                        </div>
+                                        <div class="mainTable ">
+                                            <table id="VIN-Correction" class="display nowrap themeTable"
+                                                style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>VIN # </th>
+                                                        <th>Category</th>
+                                                        <th>Type of Loss</th>
+                                                        <th>Date of Sale/Destruction/Theft</th>
+                                                        <th>Tax Credit</th>
+                                                        <th class="w-10 text-center">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="mobileView">
+                                                                <div>
+                                                                    <div class="smallHeading">EFQ885FEF8778FEAD</div>
+                                                                    <div class="date">Category: 55,001lbs - 56,000lbs
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>0 68,000-69,000LBS</td>
+                                                        <td>Destroy</td>
+                                                        <td>12/01/2022</td>
+                                                        <td>$238.00</td>
+                                                        <td class="w-10 text-center">
+                                                            <span class="tableGridBtn">
+                                                                <a href="#" class="btn btn-secondary smallBtn me-2">
+                                                                    <img src="./img/edit.svg" alt="icon">
+                                                                </a>
+                                                                <a href="#" class="btn btn-danger smallBtn">
+                                                                    <img src="./img/delete.svg" alt="icon">
+                                                                </a>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customBtn">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-primary prev">Previous</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-primary next">Next</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                              <!-- Price and Checkout -->
+                              <fieldset class="main_from">
+                                <div class="col-12 text-center Price-Checkout">
+                                    <h6 class="smallHeading">Price and Checkout</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-7">
+                                        <div class="card priceCard">
+                                            <div class="card-body">
+                                                <div class="col-12 text-center">
+                                                    <h6 class="smallHeading">Checkout</h6>
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <label for="card" class="form-label">Card Number<span
+                                                            class="fill">*</span></label>
+                                                    <input type="number" class="form-control" id="card"
+                                                        placeholder="---- ---- ---- ----"
+                                                        aria-describedby="CardNumberHelp">
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <label for="date" class="form-label">Expiration Date<span
+                                                            class="fill">*</span></label>
+                                                    <input type="date" class="form-control" id="date"
+                                                        placeholder="dd / mm / yy"
+                                                        aria-describedby="Expiration DateHelp">
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <label for="CVV" class="form-label">CVV<span
+                                                            class="fill">*</span></label>
+                                                    <input type="number" class="form-control" id="CVV" placeholder="---"
+                                                        aria-describedby="CVVHelp">
+                                                </div>
+                                                <div class="col-md-12 form-group">
+                                                    <label for="Amount" class="form-label">Amount</label>
+                                                    <input type="text" class="form-control" id="Amount"
+                                                        placeholder="Enter Amount" aria-describedby="AmountHelp"
+                                                        value="$24.97" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="card CheckoutCard">
+                                            <div class="totalCard">
+                                                <h2 class="title">$24.97</h2>
+                                                <span class="smallText">1 Vehicle Form 2290</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="customBtn">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-primary prev">Previous</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-purple next">Checkout</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                              <!-- Form Summary -->
+                              <fieldset class="main_from last">
+                                <div class="container-sm ">
+                                    <div class="col-12 text-center">
+                                        <h6 class="smallHeading">Form Summary</h6>
+                                    </div>
+                                    <div class="summary">
+                                        <div class="row">
+                                            <ul class="ccol-md-8 summaryList">
+                                                <li>
+                                                    <div class="label">
+                                                        Filing Period:
+                                                    </div>
+                                                    <div class="value">
+                                                        July 2022 - June 2023
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label">
+                                                        Business:
+                                                    </div>
+                                                    <div class="value">
+                                                        Sample
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label">
+                                                        Amount:
+                                                    </div>
+                                                    <div class="value">
+                                                        $225.50
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="label">
+                                                        Package Name:
+                                                    </div>
+                                                    <div class="value">
+                                                        Unlimited
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mainTable mt-4">
+                                        <table id="summaryTable" class="display nowrap themeTable" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>VIN # </th>
+                                                    <th>Category</th>
+                                                    <th>Type of Loss</th>
+                                                    <th>Date of Sale/Destruction/Theft</th>
+                                                    <th>Tax Credit</th> 
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="mobileView">
+                                                            <div>
+                                                                <div class="smallHeading">EFQ885FEF8778FEAD</div>
+                                                                <div class="date">Category: 55,001lbs - 56,000lbs
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>0 68,000-69,000LBS</td>
+                                                    <td>Destroy</td>
+                                                    <td>12/01/2022</td>
+                                                    <td>$238.00</td> 
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="customBtn">
+                                    <div>
+                                        <button type="button" class="btn btn-outline-primary prev">Previous</button>
+                                    </div>
+                                    <div>
+                                        <button type="button" onclick="location.href='submitted.html'"
+                                            class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <!-- datatable js -->
+    <script type="text/javascript" src="./js/datatable/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./js/datatable/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="./js/datatable/responsive.bootstrap5.min.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="./js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            // VIN-Correction Table
+            var table = $('#VIN-Correction').DataTable({
+                responsive: true,
+                "ordering": false,
+                "searching": false,
+                "lengthChange": false,
+                "info": false,
+                "paging": false,
+
+                columnDefs: [
+
+                    { targets: [0, 1, 2, 3, 4, 5], className: "desktop" },
+                    { targets: [0], className: "mobile tablet" }
+                ]
+            });
+            // summaryTable Table
+            var table = $('#summaryTable').DataTable({
+                responsive: true,
+                "ordering": false,
+                "searching": false,
+                "lengthChange": false,
+                "info": false,
+                "paging": false,
+
+                columnDefs: [
+
+                    { targets: [0, 1, 2, 3,4], className: "desktop" },
+                    { targets: [0], className: "mobile tablet" }
+                ]
+            });
+        }); 
+    </script>
+</body>
+
+</html>

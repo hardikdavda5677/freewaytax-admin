@@ -21,19 +21,21 @@ body {
     /* Theme Main Color */
     --themeColor: #215BB3;
     --themeColorRgba: 33, 91, 179;
-    --themeDarkColor: #124592;
+    --themeDarkColor: #0c387a;
     --themeSecondaryColor: #28A9E0;
     --themeSecondaryColorRgba: 40, 169, 224;
-    --themeSecondaryDarkColor: #239ed3;
+    --themeSecondaryDarkColor: #1b92c5;
     --themegradient: linear-gradient(180deg, #2C3A91 0%, #28A9E0 134.2%);
     --themelighter: #EFF4FA;
     /* secondary colors */
     --SecPurpleColor: #5C5CAB;
-    --SecPurpleDarkColor: #4d4da0;
+    --SecPurpleDarkColor: #424291;
     --SecDangerColor: #C73967;
     --SecPinkColor: #FA6164;
+    --SecPinkColorRgba: 250, 97, 100;
     --SecOrangeColor: #FB8500;
     --SecYellowColor: #FDD422;
+    --SecYellowColorRgba: 253, 212, 34;
     --SecGreenColor: #9AB70B;
     --SecGreenColorRgba: 154, 183, 11;
     --SecGreenDarkColor: #86a005;
@@ -47,6 +49,16 @@ body {
 a {
     transition: 0.5s;
     cursor: pointer;
+}
+*:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+    outline-offset: 1px;
+  }
+p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; 
+    color: #2A2D32;
 }
 
 ul {
@@ -65,15 +77,18 @@ ul {
         border-radius: 12px;
     }
 }
-.link{
+
+.link {
     font-weight: 400;
     font-size: 16px;
     line-height: 17px;
     text-decoration: underline;
 }
-.link-primary{
+
+.link-primary {
     color: var(--themeColor);
 }
+
 /* Btn Custom */
 .btn {
     font-weight: 500;
@@ -83,6 +98,11 @@ ul {
     padding: 15px;
     transition: 0.5s;
     cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: inherit;
 }
 
 .btn-primary {
@@ -96,18 +116,59 @@ ul {
     border-color: var(--themeDarkColor);
     background-color: var(--themeDarkColor);
 }
+
 .btn-outline-primary {
     border-color: var(--themeColor);
     background-color: #fff;
-    color:  var(--themeColor);
+    color: var(--themeColor);
 }
 
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
     background-color: rgba(var(--themeColorRgba), 10%);
-    color:  var(--themeColor);
-    border-color: var(--themeDarkColor); 
-} 
+    color: var(--themeColor);
+    border-color: var(--themeDarkColor);
+}
+
+.btn-outline-danger {
+    border-color: var(--SecPinkColor);
+    background-color: #fff;
+    color: var(--SecPinkColor);
+}
+
+.btn-outline-danger:hover,
+.btn-outline-danger:focus {
+    background-color: rgba(var(--SecPinkColorRgba), 10%);
+    color: var(--SecPinkColor);
+    border-color: var(--SecPinkColor);
+}
+
+.btn-outline-yellow {
+    border-color: var(--SecYellowColor);
+    background-color: #fff;
+    color: var(--SecYellowColor);
+}
+
+.btn-outline-yellow:hover,
+.btn-outline-yellow:focus {
+    background-color: rgba(var(--SecYellowColorRgba), 10%);
+    color: var(--SecYellowColor);
+    border-color: var(--SecYellowColor);
+}
+
+.btn-outline-green {
+    border-color: var(--SecGreenColor);
+    background-color: #fff;
+    color: var(--SecGreenColor);
+}
+
+.btn-outline-green:hover,
+.btn-outline-green:focus {
+    background-color: rgba(var(--SecGreenColorRgba), 10%);
+    color: var(--SecGreenColor);
+    border-color: var(--SecGreenColor);
+}
+
 .btn-secondary {
     border-color: var(--themeSecondaryColor);
     background-color: var(--themeSecondaryColor);
@@ -227,14 +288,21 @@ ul {
 .bg-primary {
     background-color: var(--themeColor) !important;
 }
+
 .bg-red {
-    background-color:#b7240b;
+    background-color: #b7240b;
     color: #fff;
 }
+
+.f-600 {
+    font-weight: 600;
+}
+
 /* Form Custom */
 .form-group {
     margin-bottom: 15px;
-} 
+}
+
 .form-group .form-label {
     font-size: 14px;
     font-weight: 500;
@@ -265,12 +333,20 @@ ul {
     color: #000;
     transition: 0.5s;
 }
+
+.form-group textarea.form-control {
+    padding: 15px;
+    height: auto;
+    resize: none;
+}
+
 .form-group .form-control:disabled, .form-control[readonly] {
     border: 0px;
     background-color: #F5F1F1;
     opacity: 1;
     font-weight: 600;
 }
+
 .form-group.error-message .form-control,
 .form-group.error-message .form-select {
     border-color: #fd0000;
@@ -324,13 +400,15 @@ ul {
     -moz-appearance: textfield;
 }
 
-.form-check .form-check-input[type="checkbox"]{
-    width: 16px;
-    height: 16px;
+.form-check .form-check-input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
     border: 2px solid #CFD2D7;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 10px;
 }
+
 .form-check .form-check-input[type=radio] {
     width: 18px;
     height: 18px;
@@ -339,6 +417,7 @@ ul {
     cursor: pointer;
     margin-right: 10px;
 }
+
 .form-check .form-check-input[type="checkbox"]:checked,
 .form-check .form-check-input[type="radio"]:checked {
     background-color: var(--themeColor);
@@ -390,8 +469,8 @@ form .customBtn .btn {
     font-size: 16px;
     border-radius: 12px;
 }
- 
-.main_from  .customBtn{
+
+.main_from .customBtn {
     display: flex;
     justify-content: space-between;
 }
@@ -403,7 +482,11 @@ form .customBtn .btn {
 
     form .customBtn .btn {
         min-width: 100%;
-    } 
+    }
+
+    .form-check .form-check-label {
+        width: 95%;
+    }
 }
 
 /* Comman Css Start */
@@ -492,6 +575,7 @@ form .customBtn .btn {
     transform: translateX(120%);
     position: absolute;
     visibility: hidden;
+    background: #fff;
 }
 
 .back_form {
@@ -538,40 +622,49 @@ form .customBtn .btn {
     text-align: center;
     color: #2A2D32;
 }
-.allformProgressbar{
+
+.allformProgressbar {
     justify-content: center;
     margin-bottom: 70px;
 }
-.allformProgressbar li{
+
+.allformProgressbar li {
     padding-right: 10px;
 }
+
 @media screen and (min-width: 1100px) and (max-width: 1360px) {
-    .allformProgressbar.formProgressbar li:not(:last-child)::after { 
+    .allformProgressbar.formProgressbar li:not(:last-child)::after {
         width: 30px;
     }
 }
+
 @media screen and (min-width: 1361px) and (max-width: 1700px) {
-    .allformProgressbar.formProgressbar li:not(:last-child)::after { 
+    .allformProgressbar.formProgressbar li:not(:last-child)::after {
         width: 40px;
     }
 }
+
 @media screen and (min-width: 1100px) and (max-width: 1600px) {
     .allformProgressbar.formProgressbar .mainProgressbar {
         margin-left: 5px;
     }
-    .allformProgressbar.formProgressbar li:before { 
+
+    .allformProgressbar.formProgressbar li:before {
         width: 28px;
         height: 28px;
     }
+
     .allformProgressbar li {
         padding-right: 5px;
     }
 }
+
 @media (max-width: 1080px) {
-    .allformProgressbar.formProgressbar{
+    .allformProgressbar.formProgressbar {
         position: fixed;
-        top: 71px;   
+        top: 71px;
     }
+
     .formProgressbar {
         background: #fff;
         left: 0;
@@ -579,7 +672,7 @@ form .customBtn .btn {
         margin: 0;
         width: 100%;
         border-bottom: 1px solid #EAECF0;
-        z-index: 58;
+        z-index: 1;
     }
 
     .formProgressbar li {
@@ -595,8 +688,12 @@ form .customBtn .btn {
     .formProgressbar li .SmallHeading {
         font-weight: 600;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 26px;
         color: #2A2D32;
+    }
+
+    .formProgressbar .mainProgressbar {
+        text-align: right;
     }
 
     .formProgressbar li .smallText {
@@ -634,9 +731,11 @@ form .customBtn .btn {
 .w-25 {
     width: 25%;
 }
+
 .w-30 {
     width: 30%;
 }
+
 .tableHeading {
     font-size: 20px;
     line-height: 24px;
@@ -662,6 +761,10 @@ form .customBtn .btn {
 
 .addBtn img {
     margin-right: 10px;
+}
+
+.small-Btn {
+    padding: 10px 18px;
 }
 
 .table-header .dataTables_length label {
@@ -829,17 +932,20 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
     line-height: 27px;
     margin-bottom: 0px;
 }
-.themeTable  .form-check {
+
+.themeTable .form-check {
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
 }
-.themeTable  .form-check .form-check-input{
+
+.themeTable .form-check .form-check-input {
     width: 20px;
     height: 20px;
     margin: 0;
 }
+
 @media screen and (max-width: 1024px) {
     .themeTable th {
         padding: 15px;
@@ -871,10 +977,12 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
         justify-content: space-between;
         align-items: center;
     }
-    .mobileView.mobileCheck{
+
+    .mobileView.mobileCheck {
         justify-content: inherit;
 
     }
+
     table.dataTable.dtr-inline.collapsed tbody tr .mobile:before,
     table.dataTable.dtr-inline.collapsed tbody tr .tablet:before {
         content: '';
@@ -914,12 +1022,14 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
 
     .mobileView .date,
     .mobileView .Mstatus,
-    .mobileView.mobileCheck .form-check{
+    .mobileView.mobileCheck .form-check {
         display: inline-block;
     }
-    .mobileView.mobileCheck .form-check{
+
+    .mobileView.mobileCheck .form-check {
         margin-right: 10px;
     }
+
     .themeTable td {
         padding-left: 0px;
         padding-right: 0px;
@@ -947,9 +1057,11 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
         padding: 10px 15px;
         border-bottom: solid 1px #fff;
     }
-    .themeTable .dtr-details .desktop[data-dt-column="0"]{
+
+    .themeTable .dtr-details .desktop[data-dt-column="0"] {
         display: none;
     }
+
     .themeTable .dtr-details .desktop .status {
         background-color: transparent;
         color: #000;
@@ -961,7 +1073,7 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
     }
 
     .tableHeading,
-    .mainAllHeader .tableHeading  {
+    .mainAllHeader .tableHeading {
         font-size: 16px;
         margin-bottom: 10px;
     }
@@ -994,7 +1106,12 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
         font-size: 13px;
         text-align: left;
     }
-
+    .mainTable .dataTables_info{
+        width: 70%;
+    }
+    .mainTable .dataTables_paginate{
+        width: 30%;
+    }
     .mainTable .dataTables_wrapper .dataTables_paginate {
         text-align: right;
     }
@@ -1003,11 +1120,13 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
         width: 300px;
     }
 }
+
 @media screen and (max-width:1080px) {
-   .stepperAllForm .mainAllHeader {
+    .stepperAllForm .mainAllHeader {
         display: none;
     }
 }
+
 @media screen and (max-width:768px) {
     .table-header .dataTables_length {
         margin-top: 20px;
@@ -1017,7 +1136,7 @@ div.dataTables_wrapper div.dataTables_filter input:focus {
         flex-flow: column;
         align-items: flex-start;
     }
-    
+
     .mainAllHeader {
         display: inline-block;
     }
@@ -1110,7 +1229,7 @@ form h6.smallHeading {
     .signUp .card {
         width: 100%;
         border-radius: 0px;
-        padding: 80px 15px 50px;
+        padding: 100px 15px 50px;
         border: 0px;
     }
 
@@ -1301,10 +1420,10 @@ form h6.smallHeading {
     .menu-main {
         transform: translateX(-120%);
         transition: transform 0.3s ease-in;
-        margin-top: 71px;
-        height: calc(100% - 71px);
+        margin-top: 72px;
+        height: calc(100% - 72px);
     }
- 
+
     .menu-main.show {
         transform: translateX(0);
     }
@@ -1317,9 +1436,11 @@ form h6.smallHeading {
         padding: 15px;
         height: calc(100% - 120px);
     }
+
     .menu-main .menu-list .nav-item:not(:last-child) {
         margin-bottom: 10px;
     }
+
     .menu-main .menu-list li .link-text {
         padding: 12px 15px;
     }
@@ -1336,6 +1457,7 @@ form h6.smallHeading {
         content: '';
         position: absolute;
         top: 0px;
+        left: 0px;
         width: 100%;
         height: 100%;
         background-color: rgb(0 0 0 / 70%);
@@ -1477,12 +1599,14 @@ form h6.smallHeading {
 .themeMain .dropdown-menu ul li {
     padding: 0px;
 }
+
 .themeMain .dropdown-menu ul li:hover,
 .themeMain .dropdown-menu ul li:focus,
-.themeMain .dropdown-item.active, 
-.themeMain .dropdown-item:active{
+.themeMain .dropdown-item.active,
+.themeMain .dropdown-item:active {
     background-color: #e9ecef;
 }
+
 .themeMain .dropdown-menu ul li a {
     display: block;
     padding: 7px 15px;
@@ -1644,7 +1768,8 @@ form h6.smallHeading {
         width: 100%;
         padding: 20px 15px 30px
     }
-    .stepperAllForm{
+
+    .stepperAllForm {
         padding-top: 90px;
     }
 }
@@ -1766,10 +1891,12 @@ form h6.smallHeading {
 .businessList .card-body {
     padding: 30px 20px;
 }
-.businessGrid .add-Btn{
+
+.businessGrid .add-Btn {
     margin-top: 100px;
     text-align: center;
 }
+
 .businessList .mainHeading {
     display: flex;
     justify-content: space-between;
@@ -1881,7 +2008,7 @@ form h6.smallHeading {
         width: 70%;
     }
 
-   .dashboard-main  .col-xxl-5 {
+    .dashboard-main .col-xxl-5 {
         width: 30%;
     }
 
@@ -2039,6 +2166,7 @@ form h6.smallHeading {
     .businessList .customBtn .btn {
         font-size: 16px;
         padding: 15px;
+        border-radius: 12px;
     }
 
     .businessList .bussinessInner {
@@ -2183,7 +2311,7 @@ form h6.smallHeading {
 
 @media (min-width: 1120px) {
     .getStarted .modal-dialog {
-        max-width: 1100px;
+        max-width: 1000px;
     }
 }
 
@@ -2273,7 +2401,7 @@ form h6.smallHeading {
 
 
 .all-body {
-    padding: 30px 50px;
+    padding: 30px 50px 50px;
 }
 
 .customTab {
@@ -2325,7 +2453,7 @@ form h6.smallHeading {
     display: inline-flex;
     align-items: center;
     width: 100%;
-    padding: 8px 20px; 
+    padding: 8px 20px;
     margin-bottom: 20px;
     background-color: #fff;
     height: 60px;
@@ -2334,27 +2462,34 @@ form h6.smallHeading {
 .packageDetails .title {
     font-size: 16px;
 }
+
 .packageDetails.bg-pending .status {
     background-color: var(--themeColor);
 }
+
 .packageDetails.bg-pending .title {
     color: var(--themeColor);
-} 
+}
+
 .packageDetails.bg-complete .status {
     background-color: var(--SecGreenColor);
 }
+
 .packageDetails.bg-complete .title {
     color: var(--SecGreenColor);
-} 
+}
+
 .packageDetails .status {
     width: 9px;
     height: 9px;
     border-radius: 50%;
 }
-.packageInfo{
+
+.packageInfo {
     display: inline-block;
     margin-left: 15px;
 }
+
 .packageDetails .title {
     font-weight: 600;
     font-size: 16px;
@@ -2374,13 +2509,15 @@ form h6.smallHeading {
 
 @media screen and (min-width: 769px) and (max-width: 1700px) {
     .all-body {
-        padding: 30px  20px;
-    }  
+        padding: 30px 20px 30px;
+    }
 }
+
 @media screen and (max-width: 768px) {
     .all-body {
-        padding: 30px 15px;
+        padding: 30px 15px 30px;
     }
+
     .addBtn {
         padding: 10px 20px;
         font-size: 14px;
@@ -2421,88 +2558,112 @@ form h6.smallHeading {
     div.dataTables_wrapper div.dataTables_filter input {
         width: 100%;
     }
-    .custom-breadcrumb{
+
+    .custom-breadcrumb {
         margin-bottom: 15px;
     }
 }
 
 /* 06 Business List Css End */
 /* 06 Form 2290  Css Start */
-.stepperAllForm .all-body{
+.stepperAllForm .all-body {
     overflow: hidden;
 }
+
 .tablecustomForm,
-.tablecustomForm .form-group{
+.tablecustomForm .form-group {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.tablecustomForm .form-group{ 
+
+.tablecustomForm .form-group {
     margin: 0;
 }
-.tablecustomForm .form-group .form-label{
+
+.tablecustomForm .form-group .form-label {
     margin: 0;
     margin-right: 5px;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
 }
-.tablecustomForm .form-group .form-control{
+
+.tablecustomForm .form-group .form-control {
     width: 60px;
     padding: 5px;
     text-align: center;
 }
+
 .stepperAllForm .container-sm {
     padding-left: 0px;
     padding-right: 0px;
 }
-.stepperAllForm form h6.smallHeading{
+
+.stepperAllForm form h6.smallHeading {
     margin-bottom: 30px;
 }
-.CreditVehicle{
+
+.CreditVehicle {
     background: #FBFBFB;
     border-radius: 21px;
     padding: 50px 50px 30px;
 }
-.CreditVehicle .smalltext,
-.form-group .form-label{
+
+.CreditVehicle .smalltext {
     font-weight: 500;
     font-size: 14px;
-    line-height: 18px; 
+    line-height: 18px;
     color: #2A2D32;
 }
-.CreditVehicle ul li{
+
+.CreditVehicle ul li {
     margin-bottom: 13px;
-} 
-.totalAmount{
+}
+
+.totalAmount {
     font-weight: 400;
     font-size: 16px;
-    line-height: 17px; 
+    line-height: 17px;
     color: #2A2D32;
 }
-.totalAmount strong{
+
+.totalAmount strong {
     font-weight: 700;
 }
+
 .priceCard,
 .CheckoutCard,
 .IRS-Payment,
-.summary{
+.summary.card,
+.Finish.card {
     background: #FBFBFB;
-  
+
 }
+
 .priceCard .card-body,
 .IRS-Payment .card-body,
-.summary .card-body{
+.summary.card .card-body {
     padding: 50px;
 }
-.CheckoutCard{
+
+.Finish.card .card-body {
+    padding: 50px 40px;
+}
+
+.CheckoutCard {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     padding: 50px;
 }
-.CheckoutCard .totalCard{
+
+.accounting-firm .CheckoutCard {
+    justify-content: flex-start;
+}
+
+.CheckoutCard .totalCard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2513,26 +2674,41 @@ form h6.smallHeading {
     width: 360px;
     padding: 70px 30px;
 }
-.CheckoutCard .totalCard .title{
+
+.CheckoutCard .totalCard .title {
     font-weight: 600;
     font-size: 50px;
-    line-height: 60px; 
+    line-height: 60px;
     color: #2A2D32;
     margin-bottom: 2px;
 }
-.CheckoutCard .totalCard  .smallText{
+
+.CheckoutCard .totalCard .smallText {
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px; 
+    line-height: 19px;
     color: #2A2D32;
 }
-.Price-Checkout  {
+
+.CheckoutCard .smallInfo {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #2A2D32;
+    width: 360px;
+    text-align: left;
+    margin: 1rem 0rem 0rem;
+}
+
+.Price-Checkout {
     display: none;
-} 
-.IRS-Payment{
+}
+
+.IRS-Payment {
     width: 700px;
     margin: 0 auto;
 }
+
 .IRS-Payment .infoText {
     font-weight: 500;
     font-size: 12px;
@@ -2541,165 +2717,232 @@ form h6.smallHeading {
     margin-left: 7px;
     margin-bottom: 0px;
 }
-.summaryList{
+
+.summaryList {
     margin-bottom: 20px;
 }
-.summaryList li{
+
+.summaryList li {
     display: flex;
     margin-bottom: 20px;
 }
 
 .summaryList li .label,
-.summaryList li .value{
+.summaryList li .value {
     display: inline-flex;
     font-size: 14px;
-    line-height: 17px; 
+    line-height: 17px;
     color: #2A2D32;
     width: 50%;
 }
-.summaryList li .label{ 
-    font-weight: 600;
+
+.summaryList li .label {
+    font-weight: 700;
 }
-.summaryList li .value{ 
+
+.summaryList li .value {
     font-weight: 400;
 }
 
-@media (max-width: 1199px){
-    .CheckoutCard{
+@media (max-width: 1199px) {
+    .CheckoutCard {
         margin-top: 20px;
     }
 }
+
 @media screen and (max-width: 1080px) {
-    .tablecustomForm{
+    .tablecustomForm {
         margin-top: 5px;
     }
+
     .tablecustomForm,
-    .tablecustomForm .form-group{ 
+    .tablecustomForm .form-group {
         justify-content: flex-start;
-    } 
+    }
+
     .main_from .customBtn .btn {
-        min-width: 120px; 
-        padding: 16px 30px;
+        min-width: 160px;
+        padding: 16px 10px;
         font-size: 14px;
     }
 
     .stepperAllForm .container-sm {
-        max-width: 100%; 
+        max-width: 100%;
+        min-height: 450px;
     }
-    .stepperAllForm form h6.smallHeading{
+
+    .stepperAllForm form h6.smallHeading {
         margin-bottom: 15px;
         text-align: left;
     }
-    .CheckoutCard{
+
+    .CheckoutCard {
         display: none;
     }
-  
-    .priceCard .card-body  h6.smallHeading{
+
+    .accounting-firm .CheckoutCard {
+        display: inline-block;
+        width: 100%;
+        padding: 20px 15px;
+        margin-bottom: 15px;
+        height: auto;
+    }
+
+    .accounting-firm .CheckoutCard .totalCard,
+    .accounting-firm .CheckoutCard .smallInfo {
+        width: 100%;
+    }
+
+    .accounting-firm .CheckoutCard .totalCard {
+        padding: 35px 20px;
+    }
+
+    .CheckoutCard .totalCard .title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .CheckoutCard .totalCard .smallText {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .priceCard .card-body h6.smallHeading {
         display: none;
     }
+
     .Price-Checkout {
         display: inline-block;
     }
+
     .IRS-Payment {
         width: 100%;
     }
 }
-@media (min-width: 992px){
-.stepperAllForm .container-sm {
-    max-width: 900px; 
-    min-height: 450px;
-} 
+
+@media (min-width: 992px) {
+    .stepperAllForm .container-sm {
+        max-width: 900px;
+        min-height: 400px;
+    }
 }
-@media (max-width: 768px){
-    .stepperAllForm .container-sm { 
-        min-height: 500px;
+
+@media (max-width: 768px) {
+    .stepperAllForm .container-sm {
+        min-height: 400px;
     }
-    .CreditVehicle{
-        padding:25px 15px;
+
+    .CreditVehicle {
+        padding: 25px 15px;
     }
+
     .priceCard .card-body,
     .IRS-Payment .card-body,
-    .summary .card-body {
+    .summary.card .card-body,
+    .Finish.card .card-body {
         padding: 20px 15px;
     }
-    .IRS-Payment { 
+
+    .IRS-Payment {
         border: 1px solid #CFD2D7;
         background-color: #fff;
     }
-    .IRS-Payment .card-body  .form-check .form-check-label{
-        display: inline-block;
-        width: 90%;
-    }
+
+ 
+
     .summaryList {
         margin-bottom: 0;
     }
+
     .summaryList li {
         display: flex;
         margin-bottom: 10px;
-    } 
+    }
+
     .summary .mainTable {
         margin-top: 20px;
     }
 }
+
 /* 06 Form 2290 Css End */
-/* 07  */
-.submitted .all-body{
+/* 07   submitted Css Start*/
+.submitted .all-body {
     padding: 50px;
 }
+
 .submitted .container {
-  padding: 0px;
-} 
-.submitted .successCard{
+    padding: 0px;
+}
+
+.submitted .successCard {
     padding: 50px;
     background: linear-gradient(282.28deg, #2C3191 -13.32%, #28A9E0 110.51%);
 }
-.submitted .heading{
+
+.submitted .heading {
     text-align: center;
     margin-bottom: 35px;
 }
-.submitted .heading .successIcon{
+
+.submitted .heading .successIcon {
     width: 75px;
     height: 75px;
-    background: var(--SecGreenColor);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 25px;
-    padding: 20px;
+    padding: 25px;
 }
-.submitted .heading .successIcon img{
+
+.submitted .heading .successIcon.success {
+    background: var(--SecGreenColor);
+}
+
+.submitted .heading .successIcon.cancel {
+    background: var(--SecPinkColor);
+}
+
+.submitted .heading .successIcon img {
     width: 100%;
 }
-.submitted .heading .mainHeading{
+
+.submitted .heading .mainHeading {
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
     color: #fff;
 }
-.submitted  .emailCard{
+
+.submitted .emailCard {
     width: 880px;
     margin: 0 auto;
-    padding:30px 50px;
+    padding: 30px 50px;
 }
-.submitted .information{
+
+.submitted .information {
     padding-bottom: 15px;
     border-bottom: 1px solid #BEBEBE;
 }
-.submitted .information p{
+
+.submitted .information p {
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
     margin-bottom: 8px;
 }
-.submitted  .contactInfo{
+
+.submitted .contactInfo {
     text-align: center;
 }
-.submitted  .contactInfo{
+
+.submitted .contactInfo {
     text-align: center;
     padding-top: 20px;
 }
-.submitted  .contactInfo p{
+
+.submitted .contactInfo p {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -2707,18 +2950,305 @@ form h6.smallHeading {
     color: #2A2D32;
     margin-bottom: 10px;
 }
-.submitted  .contactInfo .link{
+
+.submitted .contactInfo .link {
     display: inline-block;
     width: 100%;
     font-size: 16px;
 }
-.submitted  .contactInfo .btn{ 
+
+.submitted .contactInfo .btn {
     min-width: 230px;
     border-radius: 12px;
     margin-top: 20px;
 }
-@media (min-width: 1400px){
-    .submitted .container {
-        max-width: 1210px;  
-    } 
+
+.freiendCard {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 50px;
 }
+
+.freiendCard .title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #2A2D32;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.freiendCard .smallText {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2A2D32;
+}
+
+.freiendCard .addButton .btn {
+    padding: 5px 14px;
+    height: 100%;
+    width: 50px;
+}
+
+.errorInfo {
+    text-align: center;
+}
+
+.errorInfo p {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.errorInfo .btn {
+    min-width: 240px;
+}
+
+@media (min-width: 1400px) {
+    .submitted .container {
+        max-width: 1210px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .submitted .container,
+    .submitted .emailCard {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .submitted .all-body {
+        padding: 30px 20px 50px;
+    }
+
+    .submitted .successCard {
+        padding: 30px 15px;
+    }
+
+    .submitted .emailCard {
+        padding: 20px 15px;
+    }
+
+    .submitted .heading .successIcon {
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+    }
+
+    .submitted .heading {
+        margin-bottom: 15px;
+    }
+
+    .submitted .heading .mainHeading {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .submitted .contactInfo {
+        text-align: left;
+    }
+
+    .submitted .contactInfo p {
+        text-align: left;
+    }
+
+    .submitted .contactInfo .btn {
+        min-width: auto;
+        border-radius: 12px;
+        margin-top: 10px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .freiendCard {
+        max-width: 100%;
+    }
+
+    .freiendCard .title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .freiendCard .form-group {
+        margin-bottom: 0px;
+    }
+
+    .freiendCard .form-group .form-control {
+        margin-bottom: 10px;
+    }
+
+    .freiendCard .addButton {
+        display: none;
+    }
+
+    .freiendCard .customBtn .btn {
+        min-width: auto;
+        padding: 12px 20px;
+    }
+
+    .errorInfo {
+        text-align: left;
+    }
+
+    .errorInfo .btn {
+        min-width: auto;
+        padding: 10px 15px;
+    }
+}
+
+/* 07   submitted Css End*/
+/* 08 Vin Corrections Css Start */
+.vin-corrections {
+    height: 120px;
+}
+
+.Finish p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2A2D32;
+    margin-bottom: 12px;
+}
+
+.Finish p:last-child {
+    margin-bottom: 0px;
+}
+
+.Finish.card {
+    width: 700px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .Finish.card {
+        width: 100%;
+    }
+
+}
+
+/* 08 Vin Corrections Css End */
+/* 09 2290 Claims Css Start */
+.claims2290 .card {
+    border: 1px solid #CFD2D7;
+    box-shadow: 0px 6px 20px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    height: 100%;
+    margin: 10px 0px;
+}
+
+.claims2290 .card-body {
+    padding: 30px;
+}
+
+.claims2290 .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.sold {
+    background-color: rgba(var(--SecPinkColorRgba), 0.3);
+}
+
+.sold svg {
+    fill: var(--SecPinkColor);
+}
+
+.pending {
+    background-color: rgba(var(--SecYellowColorRgba), 0.3);
+}
+
+.pending svg {
+    fill: var(--SecYellowColor);
+}
+
+.success {
+    background-color: rgba(var(--SecGreenColorRgba), 0.3);
+}
+
+.success svg {
+    fill: var(--SecGreenColor);
+}
+
+.claims2290 .heading {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.claims2290 .btn {
+    padding: 12px;
+    border-radius: 50px;
+    min-width: 170px;
+}
+
+.font-600 .form-check .form-check-label {
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+
+    .claims2290 .container-sm {
+        max-width: 100%;
+    }
+
+    .claims2290 .card-body {
+        padding: 20px;
+    }
+
+    .claims2290 .icon {
+        width: 35px;
+        height: 35px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .claims2290 .heading {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    .claims2290 .btn {
+        padding: 10px;
+        min-width: 120px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .claims2290 .card {
+        height: auto;
+    }
+
+    .claims2290 {
+        background-color: transparent;
+    }
+
+    .claims2290 .all-body {
+        padding: 0px;
+    }
+
+    .claims2290 .all-body nav,
+    .claims2290 .all-body .mainAllHeader {
+        display: none;
+    }
+
+    .claims2290 .card {
+        border: 0px;
+        margin: 8px 0px;
+        box-shadow: inherit;
+    }
+}
+
+/* 09 2290 Claims  Css End */
