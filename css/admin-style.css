@@ -458,12 +458,12 @@ ul {
     padding-left: 35px;
 }
 
-form .customBtn {
+.all-body .customBtn {
     margin-top: 50px;
     text-align: right;
 }
 
-form .customBtn .btn {
+.all-body .customBtn .btn {
     padding: 16px 10px;
     min-width: 230px;
     font-size: 16px;
@@ -476,11 +476,11 @@ form .customBtn .btn {
 }
 
 @media (max-width: 768px) {
-    form .customBtn {
+    .all-body .customBtn {
         margin-top: 20px;
     }
 
-    form .customBtn .btn {
+    .all-body .customBtn .btn {
         min-width: 100%;
     }
 
@@ -2600,7 +2600,7 @@ form h6.smallHeading {
     padding-right: 0px;
 }
 
-.stepperAllForm form h6.smallHeading {
+.stepperAllForm h6.smallHeading {
     margin-bottom: 30px;
 }
 
@@ -2771,7 +2771,7 @@ form h6.smallHeading {
         min-height: 450px;
     }
 
-    .stepperAllForm form h6.smallHeading {
+    .stepperAllForm h6.smallHeading {
         margin-bottom: 15px;
         text-align: left;
     }
