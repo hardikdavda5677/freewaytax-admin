@@ -1412,6 +1412,9 @@ form h6.smallHeading {
     .menu-main .menu-list li .link-text {
         padding: 12px 10px;
     }
+    .menu-main .menu-list li .link-text .link-label{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -3281,3 +3284,61 @@ form h6.smallHeading {
 }
 
 /* 09 2290 Claims  Css End */
+/* 10 Loader Css Start */
+.mainloader{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 55;
+} 
+  .loader {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color:  var(--themeSecondaryColor)  var(--themeSecondaryColor) transparent transparent;
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+}
+.loader:after, .loader:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent var(--themeColor) var(--themeColor);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    -webkit-animation: rotationBack 0.5s linear infinite;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+}
+.loader:before {
+    width: 48px;
+    height: 48px;
+    border-color: var(--themeSecondaryColor)  var(--themeSecondaryColor) transparent transparent;
+    -webkit-animation: rotation 1.5s linear infinite;
+    animation: rotation 1.5s linear infinite;
+}
+@keyframes rotation {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
+  @keyframes rotationBack {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(-360deg) }
+  }
+  
+/* 10 Loader Css End */
