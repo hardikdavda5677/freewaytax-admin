@@ -42,6 +42,15 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="link-text " href="./vehicle.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/vehicle.svg" alt="icon">
+                        <img class="iconactive" src="./img/vehicle-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">Vehicle</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="link-text " href="./previous-filing.html">
                     <div class="icon">
                         <img class="iconInactive" src="./img/filing.svg" alt="icon">
@@ -93,6 +102,15 @@
                         <img class="iconactive" src="./img/accounting-firm-active.svg" alt="icon">
                     </div>
                     <span class="link-label">Accounting Firm</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="link-text " href="./setting.html">
+                    <div class="icon">
+                        <img class="iconInactive" src="./img/setting.svg" alt="icon">
+                        <img class="iconactive" src="./img/setting-active.svg" alt="icon">
+                    </div>
+                    <span class="link-label">Setting</span>
                 </a>
             </li>
         </ul>
@@ -599,7 +617,44 @@
     </section>
 
     <!--Modal Get Started Start-->
-    <div class="modal fade getStarted commanMain" id="getStarted" data-bs-backdrop="static" data-bs-keyboard="false"
+    <div class="modal fade  smallpopup commanMain" id="getStarted" data-bs-backdrop="static" data-bs-keyboard="false"
+    tabindex="-1" aria-labelledby="getStarted" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="close">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                </button>
+            </div>
+            <div class="modal-heading">
+                <h5 class="modalTitle" id="getStarted">Get Started</h5>
+                <span class="smallText">Choose the right plan and start filing </span>
+            </div>
+            <div class="allCard">
+
+               
+                <div class="card bg-white">
+                    <h6 class="mainTitle text-dark">I’m A Company Owner</h6>
+                    <ul class="list">
+                        <li><i class="icon bg-primary"><img src="./img/down-white.svg" alt="icon"></i><span
+                                class="label text-dark">Single 2290 Filing <strong>- $24.97</strong></span></li>
+                        <li><i class="icon bg-primary"><img src="./img/down-white.svg" alt="icon"></i><span
+                                class="label text-dark">2-24 2290 Filing <strong>- $49.97</strong></span></li>
+                        <li><i class="icon bg-primary"><img src="./img/down-white.svg" alt="icon"></i><span
+                                class="label text-dark">25-100 2290 Filing <strong>- $69.97</strong></span></li>
+                        <li><i class="icon bg-primary"><img src="./img/down-white.svg" alt="icon"></i><span
+                                class="label text-dark">Single VIN Correction <strong>- $24.97</strong></span></li>
+                        <li><i class="icon bg-primary"><img src="./img/down-white.svg" alt="icon"></i><span
+                                class="label text-dark">Single 2290 Amendment<strong>- $24.97</strong></span></li>
+                    </ul>
+                    <div class="custom-btn"> <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#addFilling">Start Filing Today</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- <div class="modal fade getStarted commanMain" id="getStarted" data-bs-backdrop="static" data-bs-keyboard="false"
         tabindex="-1" aria-labelledby="getStarted" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -650,7 +705,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--Modal Get Started End-->
     <!--Modal Add New Filing Start-->
     <div class="modal fade getStarted commanMain" id="addFilling" data-bs-backdrop="static" data-bs-keyboard="false"

@@ -353,7 +353,7 @@ ul {
     background-color: rgba(253, 0, 0, 0.04);
 }
 
-.form-group.error-message .error-text {
+.error-text {
     font-size: 14px;
     font-weight: 500;
     color: #fd0000;
@@ -1239,7 +1239,8 @@ form h6.smallHeading {
         margin: 20px 0px;
     }
 
-    form h6.smallHeading {
+    form h6.smallHeading,
+    .stepperAllForm h6.smallHeading {
         font-size: 18px;
     }
 
@@ -1400,15 +1401,16 @@ form h6.smallHeading {
 
 @media screen and (min-width: 1100px) and (max-width: 1700px) {
     .menu-main {
-        min-width: 180px;
+        width: 210px;
+        min-width: auto;
     }
 
     .menu-main .menu-list {
-        padding: 10px;
+        padding: 10px 5px;
     }
 
     .menu-main .menu-list li .link-text {
-        padding: 15px 10px;
+        padding: 12px 10px;
     }
 }
 
@@ -1739,7 +1741,7 @@ form h6.smallHeading {
 
 @media screen and (min-width: 1100px) and (max-width: 1700px) {
     .main-section {
-        padding-left: 234px;
+        padding-left: 210px;
     }
 
     .inner-body {
@@ -2236,7 +2238,9 @@ form h6.smallHeading {
     color: #2A2D32;
     margin-bottom: 10px;
 }
-
+.commanMain.smallpopup .modal-heading .modalTitle { 
+    font-size: 26px;
+} 
 .commanMain .modal-heading .smallText {
     font-weight: 500;
     font-size: 20px;
@@ -2601,17 +2605,18 @@ form h6.smallHeading {
 }
 
 .stepperAllForm h6.smallHeading {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #2A2D32;
+    margin: 0px 0px 20px;
     margin-bottom: 30px;
 }
 
-.CreditVehicle {
-    background: #FBFBFB;
-    border-radius: 21px;
-    padding: 50px 50px 30px;
-}
+ 
 
 .CreditVehicle .smalltext {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 14px;
     line-height: 18px;
     color: #2A2D32;
@@ -2743,7 +2748,28 @@ form h6.smallHeading {
 .summaryList li .value {
     font-weight: 400;
 }
-
+.form2290 .formProgressbar li:not(:last-child)::after{
+    width: 20px;
+}
+ 
+.form2290 .formProgressbar li:before {
+    width: 30px;
+    height: 30px;
+}
+@media screen and (min-width: 1100px) and (max-width: 1600px) {
+    .form2290 .formProgressbar li:before {
+        width: 25px;
+        height: 25px;
+    }
+    .form2290 .formProgressbar li:not(:last-child)::after {
+        width: 15px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1830px) {
+    .formProgressbar li .SmallHeading { 
+        font-size: 11px;
+    }
+}
 @media (max-width: 1199px) {
     .CheckoutCard {
         margin-top: 20px;
@@ -2761,7 +2787,7 @@ form h6.smallHeading {
     }
 
     .main_from .customBtn .btn {
-        min-width: 160px;
+        min-width: 150px;
         padding: 16px 10px;
         font-size: 14px;
     }
@@ -3189,6 +3215,9 @@ form h6.smallHeading {
     padding: 12px;
     border-radius: 50px;
     min-width: 170px;
+}
+.font-600{
+    font-weight: 700 !important;
 }
 
 .font-600 .form-check .form-check-label {
