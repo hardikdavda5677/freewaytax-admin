@@ -2802,9 +2802,13 @@ form h6.smallHeading {
         padding: 16px 10px;
         font-size: 14px;
     }
-
+ 
+  
     .stepperAllForm .container-sm {
         max-width: 100%;
+        
+    }  
+    .stepperAllForm    .main_from .container-sm {
         min-height: 450px;
     }
 
@@ -2859,14 +2863,16 @@ form h6.smallHeading {
 }
 
 @media (min-width: 992px) {
-    .stepperAllForm .container-sm {
-        max-width: 900px;
+    .stepperAllForm  .container-sm {
+        max-width: 900px; 
+    }
+    .stepperAllForm .main_from  .container-sm { 
         min-height: 400px;
     }
 }
 
 @media (max-width: 768px) {
-    .stepperAllForm .container-sm {
+    .stepperAllForm .main_from  .container-sm {
         min-height: 400px;
     }
 
