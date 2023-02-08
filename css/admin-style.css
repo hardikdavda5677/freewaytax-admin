@@ -90,12 +90,21 @@ ul {
 }
 .themeMain .alert {
     padding: 10px 15px;
-    font-size: 16px;
+   
+}
+.themeMain  .alert .smallText{
+    margin-left: 5px;
+    width: 93%;
+    font-size: 15px;
+    line-height: 18px;
     font-weight: 500;
 }
 .themeMain  .alert-dismissible .btn-close{
     padding: 15px;
     background-size: 12px;
+}
+.themeMain  .alert-dismissible .btn-close:focus{
+    box-shadow: none;
 }
 /* Btn Custom */
 .btn {
