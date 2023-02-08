@@ -88,7 +88,15 @@ ul {
 .link-primary {
     color: var(--themeColor);
 }
-
+.themeMain .alert {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.themeMain  .alert-dismissible .btn-close{
+    padding: 15px;
+    background-size: 12px;
+}
 /* Btn Custom */
 .btn {
     font-weight: 500;
