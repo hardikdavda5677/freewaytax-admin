@@ -106,6 +106,12 @@ ul {
 .themeMain  .alert-dismissible .btn-close:focus{
     box-shadow: none;
 }
+@media (max-width: 768px) {
+   .themeMain  .alert .smallText{ 
+    width: 83%;
+    font-size: 14px; 
+} 
+}
 /* Btn Custom */
 .btn {
     font-weight: 500;
